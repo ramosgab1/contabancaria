@@ -67,7 +67,6 @@ public class Conta {
 	public void visualizar() {
 
 		System.out.println("--------------------- INFORMAÇÕES DE CONTA ---------------------");
-		System.out.println("\n---------------------------- NÚMERO ----------------------------");
 		System.out.println("O número da conta é: " + this.numero);
 		System.out.println("-----------------------------------------------------------------");
 		System.out.println("A agência é: " + this.agencia);
