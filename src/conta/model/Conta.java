@@ -61,10 +61,35 @@ public class Conta {
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
 	}
+	
+	public boolean sacar(float valor) {
+		if (this.getSaldo() < valor) {
+			System.out.println("\nSaldo Insuficiente!");
+			return false;
+		}
+		
+		this.setSaldo(this.getSaldo() - valor);
+		return true; 
+	}
+	
+	public void depositar(float valor) {
+		this.setSaldo(this.getSaldo() + valor);
+	}
 
 // Para que possamos visualizar os dados da conta ao chamar a classe e colocar os argumentos em outro arquivo. 
 
 	public void visualizar() {
+		
+		String tipo = "";
+		
+		switch(this.tipo) {
+		case 1: 
+			tipo = "Conta Corrente";
+		break;
+		case 2: 
+			tipo = "Conta Poupança";
+		break; 
+		}
 
 		System.out.println("--------------------- INFORMAÇÕES DE CONTA ---------------------");
 		System.out.println("O número da conta é: " + this.numero);

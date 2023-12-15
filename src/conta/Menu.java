@@ -1,13 +1,38 @@
 package conta;
 
 import java.util.Scanner;
-
 import conta.model.Conta;
 import conta.util.Cores;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
 
 public class Menu {
 
 	public static void main(String[] args) {
+		
+		//Teste de Conta. 
+		Conta c1 = new Conta(123456, 123, 1, "Laura", 10000.0f);
+		c1.visualizar();
+		c1.sacar(11000.0f);
+		c1.visualizar();
+		c1.depositar(6000.0f);
+		c1.visualizar();
+		
+		//Teste de Conta Corrente 
+		ContaCorrente cc1 = new ContaCorrente(223456, 123, 1, "Diogo", 16000.0f, 1000.0f);
+		cc1.visualizar();
+		cc1.sacar(14000.0f);
+		cc1.visualizar();
+		cc1.depositar(6000.0f);
+		cc1.visualizar();
+		
+		//Teste de Conta. 
+		ContaPoupanca cp1 = new ContaPoupanca(323456, 123, 2, "Breno", 10000.0f,15);
+		c1.visualizar();
+		c1.sacar(1000.0f);
+		c1.visualizar();
+		c1.depositar(5000.0f);
+		c1.visualizar();
 
 // Inicializar Scanner para input do usuário.
 		int opcoes = 0;
@@ -45,8 +70,6 @@ public class Menu {
 				break;
 			case 2:
 				System.out.println(Cores.TEXT_WHITE_BOLD + "    OPÇÃO: 2 - Listar todas as contas      \n");
-				Conta c1 = new Conta(123456, 123, 1, "Cole Cassidy", 2500.0f);
-				c1.visualizar();
 				
 				break;
 			case 3:
@@ -85,4 +108,5 @@ public class Menu {
 		}
 
 	}
+	
 }
