@@ -28,11 +28,11 @@ public class Menu {
 		
 		//Teste de Conta. 
 		ContaPoupanca cp1 = new ContaPoupanca(323456, 123, 2, "Breno", 10000.0f,15);
-		c1.visualizar();
-		c1.sacar(1000.0f);
-		c1.visualizar();
-		c1.depositar(5000.0f);
-		c1.visualizar();
+		cp1.visualizar();
+		cp1.sacar(1000.0f);
+		cp1.visualizar();
+		cp1.depositar(5000.0f);
+		cp1.visualizar();
 
 // Inicializar Scanner para input do usuário.
 		int opcoes = 0;
