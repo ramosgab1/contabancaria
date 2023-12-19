@@ -10,14 +10,6 @@ public class Menu {
 
 	public static void main(String[] args) {
 		
-		//Teste de Conta. 
-		Conta c1 = new Conta(123456, 123, 1, "Laura", 10000.0f);
-		c1.visualizar();
-		c1.sacar(11000.0f);
-		c1.visualizar();
-		c1.depositar(6000.0f);
-		c1.visualizar();
-		
 		//Teste de Conta Corrente 
 		ContaCorrente cc1 = new ContaCorrente(223456, 123, 1, "Diogo", 16000.0f, 1000.0f);
 		cc1.visualizar();

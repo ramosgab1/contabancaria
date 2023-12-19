@@ -1,6 +1,6 @@
 package conta.model;
 
-public class Conta {
+public abstract class Conta {
 
 // Atributos do objeto (pontos do template para serem preenchidos!)
 
